@@ -1,4 +1,4 @@
-
+ 
 #!/bin/bash
 
 if [[ -z "$NGROK_TOKEN" ]]; then
