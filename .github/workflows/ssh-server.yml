@@ -1,6 +1,9 @@
 
 name: SSH Server
-on: push
+on:
+  push:
+  watch:
+    types: started
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,4 +23,4 @@ jobs:
 
      - name: Sleep
        if: ${{ failure() }}
-       run: sleep 1h
+       run: sleep 6h
